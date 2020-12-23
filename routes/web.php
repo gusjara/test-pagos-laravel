@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pago', 'ComprasController@createOrder')->name('compras.compra');
+Route::get('/pago', 'ComprasController@comprar')->name('compras.compra');
+Route::get('/suscripcion', 'ComprasController@suscripcion')->name('compras.suscripcion');
